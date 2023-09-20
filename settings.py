@@ -12,6 +12,12 @@ BOT_NAME = "ccbookspider"
 SPIDER_MODULES = ["ccbookspider.spiders"]
 NEWSPIDER_MODULE = "ccbookspider.spiders"
 
+# settings.py 
+
+FEEDS = {
+    'bookdata.csv': {'format': 'csv'}
+}
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "ccbookspider (+http://www.yourdomain.com)"
@@ -62,9 +68,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "ccbookspider.pipelines.CcbookspiderPipeline": 300,
-#}
+ITEM_PIPELINES = {
+    "ccbookspider.pipelines.CcbookspiderPipeline": 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
