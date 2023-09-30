@@ -14,9 +14,9 @@ NEWSPIDER_MODULE = "ccbookspider.spiders"
 
 # settings.py 
 
-FEEDS = {
-    'bookdata.csv': {'format': 'csv'}
-}
+#FEEDS = {
+ #   'bookdata.csv': {'format': 'csv'}
+#}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

@@ -6,10 +6,10 @@
 import scrapy
 
 
-#class CcbookspiderItem(scrapy.Item):
+class CcbookspiderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-  #  pass
+    pass
 # items.py
 
 class BookItem(scrapy.Item):
